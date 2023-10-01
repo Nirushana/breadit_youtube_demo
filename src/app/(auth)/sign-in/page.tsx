@@ -1,5 +1,5 @@
 import { buttonVariants } from '@/components/ui/Button'
-import { Link } from 'lucide-react'
+import Link from 'next/link'
 import { FC } from 'react'
 import { cn } from '@/lib/utils'
 import SignIn from '@/components/SignIn'

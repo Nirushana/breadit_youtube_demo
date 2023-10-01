@@ -1,6 +1,7 @@
-import { FC } from 'react'
-import { Icons } from './Icons'
-import { Link } from 'lucide-react'
+import { FC } from 'react';
+import { Icons } from './Icons';
+import Link from 'next/link';
+import UserAuthForm from './UserAuthForm';
 
 
 const SignIn: FC = () => {
@@ -13,9 +14,10 @@ const SignIn: FC = () => {
             </p>
 
             {/* SignIn form */}
+            <UserAuthForm />
 
             <p className='px-8 text-center text-sm text-zinc-700'>
-                New to Breadit?{' '}
+                New to Breadit? {' '}
                 <Link href='/sign-up' className='hover:text-zinc-800 text-sm underline underline-offset-4'>Sign Up</Link>
             </p>
         </div>
